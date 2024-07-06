@@ -1,0 +1,34 @@
+{
+	"apiVersion": 2,
+	"name": "bestseller-block/bestseller",
+	"title": "Bestseller Block",
+	"category": "widgets",
+	"icon": "book",
+	"description": "A block displaying the bestselling book for the selected genre.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"genre": {
+			"type": "string",
+			"default": "Fiction"
+		},
+		"bookData": {
+			"type": "object",
+			"default": {
+				"title": "New Book",
+				"authors": "James Joyce, Declan Kiberd",
+				"coverImage": "URL_TO_COVER_IMAGE",
+				"amazonLink": "https://www.amazon.co.uk",
+				"penguinLink": "https://www.penguin.co.uk"
+			}
+		},
+		"title": {
+			"type": "string",
+			"default": "Bestsellers"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
